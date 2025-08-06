@@ -20,10 +20,13 @@
       "className": "Sorcerer",
       "classSource": "PHB",
       "features": {
-        "1": ["tarot_deck_of_fates", "fated_strikes"],
-        "6": ["thread_the_weave"],
-        "14": ["major_arcana_surge"],
-        "18": ["wheel_of_fortune"]
+        "1": [
+          "weaver_of_fates_sorcerer_phb_1_wof_tarot_deck_of_fates",
+          "weaver_of_fates_sorcerer_phb_1_wof_fated_strikes"
+        ],
+        "6": ["weaver_of_fates_sorcerer_phb_6_wof_thread_the_weave"],
+        "14": ["weaver_of_fates_sorcerer_phb_14_wof_major_arcana_surge"],
+        "18": ["weaver_of_fates_sorcerer_phb_18_wof_wheel_of_fortune"]
       }
     }
   ],
@@ -40,7 +43,7 @@
       "level": 1,
       "className": "Sorcerer",
       "classSource": "PHB",
-      "id": "tarot_deck_of_fates"
+      "id": "weaver_of_fates_sorcerer_phb_1_wof_tarot_deck_of_fates"
     },
     {
       "name": "Fated Strikes",
@@ -48,7 +51,7 @@
       "page": 1,
       "entries": [
         "You can throw Tarot cards as ranged spell attacks (30/90 ft).",
-        "Damage: 1d6 psychic (scales to 4d6 by level 17). Use Charisma to attack.",
+        "Damage: 1d6 psychic (scales at 5th/11th/17th). Use Charisma to attack.",
         "Damage type depends on the last card drawn from the Deck of Fates:",
         "- Force: Cards 1–4",
         "- Necrotic: Cards 5–8",
@@ -63,20 +66,20 @@
       "level": 1,
       "className": "Sorcerer",
       "classSource": "PHB",
-      "id": "fated_strikes"
+      "id": "weaver_of_fates_sorcerer_phb_1_wof_fated_strikes"
     },
     {
       "name": "Thread the Weave",
       "source": "WoF",
       "page": 1,
       "entries": [
-        "**Split the Deck.** When you roll on the Deck of Fates, you may instead roll twice and choose which result to use. The unused card is discarded. Use this a number of times equal to your Charisma modifier per long rest.",
-        "Once per long rest, you may spend 2 Sorcery Points to activate both drawn effects simultaneously, resolving in numerical order."
+        "**Split the Deck.** When you roll on the Deck of Fates, you may instead roll twice and choose which result to use. The unused card is discarded. You may use this feature a number of times equal to your Charisma modifier per long rest.",
+        "Once per long rest, you may spend 2 Sorcery Points to activate both drawn effects simultaneously, resolving them in numerical order."
       ],
       "level": 6,
       "className": "Sorcerer",
       "classSource": "PHB",
-      "id": "thread_the_weave"
+      "id": "weaver_of_fates_sorcerer_phb_6_wof_thread_the_weave"
     },
     {
       "name": "Major Arcana Surge",
@@ -85,32 +88,32 @@
       "entries": [
         "At the end of each long rest, roll or choose one Major Arcana. Its passive effect lasts until your next long rest:",
         "- The Moon: Darkvision 60 ft (+30 if already has). Advantage on Stealth in dim light.",
-        "- The Sun: You and allies within 10 ft start with 5 temp HP and adv. vs blind/charm.",
+        "- The Sun: You and allies within 10 ft gain 5 temp HP and advantage on saves vs blind/charm.",
         "- The Hanged Man: Forgo movement; next spell gains advantage or imposes save disadvantage.",
-        "- The Star: Once per long rest, turn a failed save into a success for you or an ally.",
+        "- The Star: Once per long rest, convert a failed save into a success.",
         "- The World: Once per long rest, grant allies advantage on one attack or save.",
-        "- Death: Lose 1 HP at start of each combat turn. Once per long rest, drop to 1 HP instead of 0 and regain one 3rd-level spell slot."
+        "- Death: Lose 1 HP each turn. Once per long rest, drop to 1 HP instead of 0 and regain a 3rd-level spell slot."
       ],
       "level": 14,
       "className": "Sorcerer",
       "classSource": "PHB",
-      "id": "major_arcana_surge"
+      "id": "weaver_of_fates_sorcerer_phb_14_wof_major_arcana_surge"
     },
     {
       "name": "Wheel of Fortune",
       "source": "WoF",
       "page": 1,
       "entries": [
-        "At the end of each long rest, roll 3 times on the Deck of Fates and store the results. Stored cards can be used at any time without expending a Deck use.",
+        "At the end of each long rest, roll 3 cards from your Deck of Fates and store the results. Stored cards can be used at any time without expending a Deck use.",
         "You may activate stored cards even outside your turn.",
-        "If reduced to 0 HP and not killed outright, you may use a stored card before falling unconscious.",
+        "If reduced to 0 HP and not killed outright, you may use a stored card immediately.",
         "Once per long rest, reroll one stored result.",
         "You may burn all 3 stored results to draw and apply any card of your choice from the Deck."
       ],
       "level": 18,
       "className": "Sorcerer",
       "classSource": "PHB",
-      "id": "wheel_of_fortune"
+      "id": "weaver_of_fates_sorcerer_phb_18_wof_wheel_of_fortune"
     }
   ],
   "table": [
@@ -124,11 +127,11 @@
         ["The Fool (Force)", "Teleport 15 ft randomly. If destination is occupied, take 2d6 force damage and fall prone. Else, gain resistance to all damage until start of next turn."],
         ["The Magician (Force)", "Gain advantage on your next spell attack roll or impose disadvantage on a target’s next saving throw."],
         ["The Hierophant (Force)", "A creature gains +2 AC until start of your next turn."],
-        ["The Empress (Force)", "Heal 1d6 + CHA and end one condition (blind, charmed, frightened, poisoned)."],
+        ["The Empress (Force)", "Heal 1d6 + CHA and remove one condition (blind, charmed, frightened, poisoned)."],
         ["The Tower (Necrotic)", "Gain temp HP = 2×Sorcerer level. Cannot take reactions until end of next turn."],
         ["The Devil (Necrotic)", "Frightened of the nearest creature until end of next turn (WIS save)."],
-        ["The Chariot (Necrotic)", "+10 movement. Immune to opportunity attacks until end of turn."],
-        ["Strength (Necrotic)", "Add 1d6 to one check, save, or attack. If you roll a 1, you suffer disadvantage on your next save."],
+        ["The Chariot (Necrotic)", "+10 ft movement. Immune to opportunity attacks until end of turn."],
+        ["Strength (Necrotic)", "Add 1d6 to a check/save/attack. If you roll a 1, you suffer disadvantage on your next save."],
         ["The Hermit (Radiant)", "Target becomes invisible until start of your next turn or until it attacks or casts a spell."],
         ["The Wheel (Radiant)", "Roll a d4: 1) Inspiration, 2) Regain 1 SP, 3) Cantrip as bonus action, 4) Stunned until end of turn."],
         ["The Lovers (Radiant)", "Link two creatures. Damage dealt to one heals the other. If hostile, both take psychic damage equal to CHA mod."],
