@@ -1,0 +1,65 @@
+{
+  "name": "Weaver of Fates",
+  "source": "Homebrew",
+  "className": "Sorcerer",
+  "subclassFeatures": [
+    { "level": 1, "feature": "Tarot Deck of Fates, Fated Strikes" },
+    { "level": 6, "feature": "Thread the Weave" },
+    { "level": 14, "feature": "Major Arcana Surge" },
+    { "level": 18, "feature": "Wheel of Fortune" }
+  ],
+  "features": {
+    "1": [
+      {
+        "name": "Tarot Deck of Fates",
+        "entries": [
+          "As a bonus action, roll a d12 to draw a Tarot card and invoke its magical effect. You may use this a number of times equal to your Charisma modifier (minimum 1) per long rest.",
+          "Each card has a unique effect and determines the damage type of your Fated Strikes: Force (1–4), Necrotic (5–8), Radiant (9–12)."
+        ]
+      },
+      {
+        "name": "Fated Strikes",
+        "entries": [
+          "Ranged spell attack (30/90 ft), 1d6 psychic (scales to 4d6 by level 17). Uses Charisma for attack and damage.",
+          "Damage type is determined by your drawn Tarot card.",
+          "On hit, spend 1 Sorcery Point to apply one: Disorient, Hex Mark, Glimpse of Fate, Reverse Momentum, or Drawn Destiny."
+        ]
+      }
+    ],
+    "6": [
+      {
+        "name": "Thread the Weave (Converging Fates)",
+        "entries": [
+          "When rolling on the Deck of Fates, you may spend 1 SP to roll twice and choose a result. Useable times = Charisma modifier per long rest.",
+          "Once per long rest, you may spend 2 SP to activate both results simultaneously, resolving them in order."
+        ]
+      }
+    ],
+    "14": [
+      {
+        "name": "Major Arcana Surge",
+        "entries": [
+          "At the end of each long rest, roll or choose one Major Arcana. Its passive effect lasts until your next long rest.",
+          "1 – The Moon: Darkvision 60 ft (or +30 ft); advantage on Stealth in dim light.",
+          "2 – The Sun: You and allies within 10 ft gain 5 temp HP and advantage on saves vs blind/charm.",
+          "3 – The Hanged Man: If you forgo movement, your next spell gains advantage or imposes save disadvantage.",
+          "4 – The Star: Once per long rest, convert a failed save into a success (self or ally within 30 ft).",
+          "5 – The World: Once per long rest, grant all allies within 30 ft advantage on one save or attack.",
+          "6 – Death: Lose 1 HP at start of combat turns. Once per long rest, drop to 1 HP instead of 0 and regain a 3rd-level spell slot."
+        ]
+      }
+    ],
+    "18": [
+      {
+        "name": "Wheel of Fortune",
+        "entries": [
+          "At the end of each long rest, roll 3 cards from Deck of Fates and store them.",
+          "Stored cards can be used at any time (reaction or no action). They do not consume your normal deck uses.",
+          "If reduced to 0 HP, you may immediately use a stored card before falling unconscious.",
+          "Once per long rest, you may reroll one stored result.",
+          "Burn all 3 stored cards to activate any single card effect of your choice."
+        ]
+      }
+    ]
+  }
+}
